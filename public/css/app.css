@@ -10882,3 +10882,20 @@ a.text-dark:focus {
   }
 }
 
+.navbar-brand img {
+  max-width: 50px;
+  height: auto;
+}
+
+.nav-link {
+  font-size: 1.12rem;
+}
+
+.calltoaction {
+  color: #FF4500 !important;
+}
+
+.calltoaction:hover {
+  color: #8a2804 !important;
+}
+
