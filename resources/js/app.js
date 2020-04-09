@@ -7,6 +7,10 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+import Form from './form';
+import Vue2Editor from "vue2-editor";
+window.Form = Form;
+Vue.use(Vue2Editor);
 
 /**
  * The following block of code may be used to automatically register your
@@ -19,7 +23,7 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('domain-register', require('./components/DomainRegisterComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
